@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ["github.com"],
+		remotePatterns: [
+			{
+				protocol: "http",
+				hostname: "github.com",
+				port: "",
+				pathname: "/izaiasmorais.png",
+			},
+		],
 	},
 };
 
