@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 async function getFeaturedProduts(): Promise<Product[]> {
-	await new Promise((resolve) => setTimeout(resolve, 3000));
+	await new Promise((resolve) => setTimeout(resolve, 1000));
 
 	const response = await api("/products/featured");
 
