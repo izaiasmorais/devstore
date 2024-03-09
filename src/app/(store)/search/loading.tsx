@@ -1,3 +1,9 @@
+
+
 export default function StoreLoading() {
-	return <div>Loading Search...</div>;
+	return (
+		<div>
+			Carregando busca...
+		</div>
+	);
 }
