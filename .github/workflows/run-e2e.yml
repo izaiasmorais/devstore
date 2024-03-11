@@ -5,13 +5,14 @@ on: push
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
+    using: "nodejs20"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: "20"
 
       - name: Install PNPM
         uses: pnpm/action-setup@v2
