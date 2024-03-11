@@ -9,8 +9,6 @@ export const metadata: Metadata = {
 };
 
 async function getFeaturedProduts(): Promise<Product[]> {
-	await new Promise((resolve) => setTimeout(resolve, 1000));
-
 	const response = await api("/products/featured");
 
 	const products = await response.json();

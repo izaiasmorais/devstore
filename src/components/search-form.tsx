@@ -6,6 +6,7 @@ import { FormEvent } from "react";
 
 export function SearchForm() {
 	const router = useRouter();
+	
 	const searchParams = useSearchParams();
 
 	const query = searchParams.get("q");
